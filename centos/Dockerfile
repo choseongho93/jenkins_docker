@@ -13,13 +13,13 @@ COPY tini /bin/
 
 ### Combine yum update with all yum install commands:
 RUN yum update -y \
-#	&& yum install -y java-1.8.0-openjdk-devel \
 	&& yum install -y java-11-openjdk-devel.x86_64 \
 	&& yum install -y git \
 	&& yum install -y python \
 	&& yum install -y docker \
 	&& yum install -y wget \
 	&& yum install -y which \
+	&& yum install -y sudo \
 	&& yum clean all \
 	&& rm -rf /var/cache/yum \
 	&& export CONTAINER_USER=jenkins \
