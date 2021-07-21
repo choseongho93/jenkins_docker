@@ -25,3 +25,4 @@ TODO:
 sort out running as the jenkins user and mapping the data volume at the same time
 
 
+기술 블로그 : https://choseongho93.tistory.com/307
